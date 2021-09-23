@@ -6,6 +6,7 @@ cd /root
 
 if [ -f /root/proxy-setup/setup.lock ]; then
    echo "Lock found, doing second part"
+   echo ""
    cd /root/proxy-setup
    docker-compose up -d
    exit 0
