@@ -1,9 +1,21 @@
+socks5:
+  hostname: socks5
+  container_name: socks5
+  image: xkuma/socks5
+  ports:
+    - "1080:1080/tcp"
+  environment:
+    - PROXY_USER=proxy
+    - PROXY_PASSWORD=proxy
+    - PROXY_SERVER=0.0.0.0:1080
+  restart: always
+
 squid:
   hostname: squid
   container_name: squid
   image: sameersbn/squid:3.5.27-2
   ports:
-    - "3128:3128"
+    - "3128:3128/tcp"
   volumes:
     - ./data/squid/cache:/var/spool/squid
     - ./squid.conf:/etc/squid/squid.conf
