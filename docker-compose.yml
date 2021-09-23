@@ -10,6 +10,18 @@ socks5:
     - PROXY_SERVER=0.0.0.0:1080
   restart: always
 
+pptp:
+  image: "mobtitude/vpn-pptp"
+  container_name: pptp
+  hostname: pptp
+  network_mode: host
+  privileged: true
+  volumes:
+   - ./chap-secrets:/etc/ppp/chap-secrets
+  restart: always
+  stdin_open: true
+  tty: true
+
 squid:
   hostname: squid
   container_name: squid
