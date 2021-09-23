@@ -6,4 +6,5 @@ squid:
     - "3128:3128"
   volumes:
     - ./data/squid/cache:/var/spool/squid
+#    - ./squid.conf:/etc/squid/squid.conf
   restart: always
