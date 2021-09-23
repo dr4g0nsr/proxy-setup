@@ -15,4 +15,7 @@ apt install docker.io
 wget https://github.com/docker/compose/releases/download/1.29.2/docker-compose-Linux-x86_64
 mv docker-compose-Linux-x86_64 /usr/bin/docker-compose && chmod 777 /usr/bin/docker-compose
 echo "1" > /root/proxy-setup/setup.lock
+echo "Rebooting..."
+echo ""
+echo "When server is back run setup.sh again"
 reboot
