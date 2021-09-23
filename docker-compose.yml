@@ -1,6 +1,8 @@
 version: '3.5'
 
-socks5:
+services:
+
+ socks5:
   hostname: socks5
   container_name: socks5
   image: xkuma/socks5
@@ -12,7 +14,7 @@ socks5:
     - PROXY_SERVER=0.0.0.0:1080
   restart: always
 
-pptp:
+ pptp:
   image: mobtitude/vpn-pptp
   container_name: pptp
   hostname: pptp
@@ -24,7 +26,7 @@ pptp:
   stdin_open: true
   tty: true
 
-squid:
+ squid:
   hostname: squid
   container_name: squid
   image: sameersbn/squid:3.5.27-2
