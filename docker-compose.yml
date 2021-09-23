@@ -1,0 +1,9 @@
+squid:
+  hostname: squid
+  container_name: squid
+  image: sameersbn/squid:3.5.27-2
+  ports:
+    - "3128:3128"
+  volumes:
+    - ./data/squid/cache:/var/spool/squid
+  restart: always
