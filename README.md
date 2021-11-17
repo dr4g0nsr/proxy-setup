@@ -7,3 +7,5 @@ wget https://github.com/docker/compose/releases/download/v2.1.1/docker-compose-l
 mv docker-compose-linux-x86_64 /usr/bin/docker-compose && chmod 777 /usr/bin/docker-compose
 docker-compose up -d
 ```
+
+Change chap-secrets for pptp connection
