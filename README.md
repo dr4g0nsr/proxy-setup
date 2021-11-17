@@ -7,6 +7,7 @@ Full setup for proxy
 chmod 777 ./setup.sh
 ./setup.sh
 ```
+After this server will restart and you need to run setup.sh once again
 
 # Manual mode
 
