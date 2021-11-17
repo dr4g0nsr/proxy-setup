@@ -1,5 +1,14 @@
-# proxy-setup
+### Proxy setup
 Full setup for proxy
+
+# Automatic mode
+
+```
+chmod 777 ./setup.sh
+./setup.sh
+```
+
+# Manual mode
 
 ```
 apt install -y docker.io
