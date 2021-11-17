@@ -1,7 +1,8 @@
-### Proxy setup
-Full setup for proxy
+# Proxy setup
 
-# Automatic mode
+Full setup for proxy, including pptp vpn, socks and web proxy
+
+### Automatic mode
 
 ```
 chmod 777 ./setup.sh
@@ -9,7 +10,7 @@ chmod 777 ./setup.sh
 ```
 After this server will restart and you need to run setup.sh once again
 
-# Manual mode
+### Manual mode
 
 ```
 apt install -y docker.io
